@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let profile = {
+            name: 'Ben'
+        }
+        profile.age = 3;
+        console.log(profile);
+        profile.an = "Lantso";
+
+        Object.freeze(profile);
+        /*seal() allows to modify*/
+        /*seal() allows to modify*/
+        /*
+Object.defineProperty(profile, 'age', {value:3, writable : false})*/
+
+
+
+        profile.an = "Lants";
+
+        /*objectName.property         // profile.age
+or
+
+objectName["property"]      // profile["age"]
+or
+
+objectName[expression]      // x = "age"; profile[x]*/
+        delete profile.age;
+        console.log(profile);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(2 + "2");
+        console.log(2 - "2");
+        /* - converts the string to a number and doesn't exist in reality */
+        /* - converts the string to a number and doesn't exist in reality */
+        console.log(3 < 4 < 7); //true omdat 3<4 = true = 1
+        console.log(7 > 6 > 5); //false
+        /*let is block (onbereikbaar buiten de {}) scoped en var function scoped, maak beiden */
+        let func = function () {
+            {
+                (function () {
+
+                })()
+            }
+            let l = 'let';
+            var v = 'var';
+        }
+        /*geen "return" plaatsen na een return (prettier verhindert dit) "return" wordt ;*/
+        let x = function () {
+            return {
+                message: "hi"
+            }
+            console.log(x);
+        }
+        /*object.Math.max() biggest number */
+        console.log(Math.max());
+        /*-infinity*/
+        console.log({} + []); //or []+[]
+        /*empty string*/
+    </script>
+
+
+</body>
+
+</html>

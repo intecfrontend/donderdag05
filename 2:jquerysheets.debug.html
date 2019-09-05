@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery_tut</title>
+</head>
+<style>
+    .vlagcontainer {
+        display: flex;
+        border: red, 1px, solid;
+    }
+
+    .vlag {
+        height: 350px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    #one {
+        background-color: black;
+        color: white;
+        display: none;
+    }
+
+    #two {
+        background-color: gold;
+        display: none;
+    }
+
+    #three {
+        background-color: red;
+        display: none;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <body>
+        <h1 id="hoofdtitel">Tutorial Jquery2</h1>
+        <button>click</button>
+        <div class="vlagcontainer">
+            <div class="vlag" , id="one">ONE</div>
+            <div class="vlag" , id="two">TWO</div>
+            <div class="vlag" , id="three">THREE</div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#one").fadeIn("fast");
+                    $("#three").slideDown(); /*slideUp*/
+
+                });
+            });
+
+
+            /*
+
+                        $(function () {
+                            $("#hoofdtitel").draggable();
+                        });*/
+        </script>
+    </body>
+
+</html>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("#three").slideUp();
+            });
+            $(".btn2").click(function () {
+                $("").slideDown();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>This is a paragraph.</p>
+
+    <button class="btn1">Slide up</button>
+    <button class="btn2">Slide down</button>
+
+</body>
+
+</html>
